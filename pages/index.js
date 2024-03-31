@@ -20,7 +20,6 @@ const Questions = () => {
       pathname: '/qalist',
       query: { qaPairs: JSON.stringify(data) }
     });
-    setIsLoading(false);
   };
 
   return (
