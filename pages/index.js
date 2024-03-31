@@ -36,7 +36,6 @@ const Questions = () => {
         <h1 className="text-3xl font-bold mb-8">Enter Your Text</h1>
         <textarea
           className="w-full h-40 p-4 border border-gray-300 rounded-lg resize-none"
-          value={qaPairs}
           onChange={(e) => setQAPairs(e.target.value)}
           placeholder="Enter your text here..."
         />
