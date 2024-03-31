@@ -26,6 +26,11 @@ const QAList = () => {
   };
 
   const handleFilter = () => {
+
+    if (selectedIds.length === 0) {
+        alert('Please select at least one item to apply the filter.');
+        return;
+      }
     const filteredData = qaPairs.filter((pair) => selectedIds.includes(pair.id));
     setFilteredPairs(filteredData);
     setIsModalOpen(true); // Open the modal 
